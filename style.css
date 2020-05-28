@@ -1,0 +1,1333 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+  font-size: 20px;
+  color: gray;
+  font-family: "Times New Roman", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row3 {
+  width: 1140px;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+.clear-fix:after {
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*------------------------------Header ---------*/
+.section1 {
+  width: 100%;
+  background-color: #083b1d;
+  height: 52px;
+  border-bottom: 1px solid #ccc;
+  line-height: 50px;
+}
+
+.ul-main li {
+  float: left;
+  list-style-type: none;
+  border: 1px solid #ccc;
+  border-bottom: transparent;
+  text-align: center;
+  border-collapse: collapse;
+}
+.ul-main li a {
+  text-decoration: none;
+  font-size: 90%;
+}
+.ul-main .ul0 {
+  width: 0%;
+}
+.ul-main .ul1 {
+  width: 3%;
+}
+.ul-main .ul1 i {
+  color: blue;
+  text-shadow: 2px 1px yellow;
+}
+.ul-main .ul1 i:hover {
+  color: #2fb3e7;
+}
+.ul-main .ul2 {
+  width: 13%;
+}
+.ul-main .ul2 i {
+  color: skyblue;
+  text-shadow: 2px 0.5px #f31818;
+}
+.ul-main .ul2 i:hover {
+  color: whitesmoke;
+}
+.ul-main .ul3 {
+  width: 25%;
+}
+.ul-main .ul3 i {
+  color: #e0c8d2;
+  text-shadow: 1px 0.5px #0e94ee;
+}
+.ul-main .ul3 i:hover {
+  color: #d2f11f;
+}
+.ul-main .ul4 {
+  width: 36%;
+}
+.ul-main .ul5 {
+  width: 9%;
+}
+.ul-main .ul5 i {
+  color: #538000;
+  text-shadow: 1px 0.5px khaki;
+}
+.ul-main .ul5 i:hover {
+  color: #1ed42d;
+}
+.ul-main .ul6 {
+  width: 12%;
+}
+.ul-main .ul6 i {
+  color: #3cbd71;
+  text-shadow: 1px 1px #e21111;
+}
+.ul-main .ul6 i:hover {
+  color: #91f00c;
+}
+
+.section-main-nav {
+  background-color: #3cbd71;
+  width: 100%;
+  height: 70px;
+}
+
+.header-i {
+  font-size: 80%;
+  color: #86e2b3;
+  font-weight: 100;
+}
+
+.header-i:hover {
+  color: #d2f11f;
+}
+
+/*-------------------------Reusable------------------------*/
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--------------------------Nav Bar-----------------*/
+.section-main-nav {
+  background-color: #3cbd71;
+  width: 100%;
+  height: 80px;
+}
+
+.first-ul {
+  position: relative;
+  float: left;
+  width: 20%;
+}
+.first-ul h1 {
+  font-size: 100%;
+  color: white;
+  text-shadow: 2px 2px 1px brown;
+}
+.first-ul h5 {
+  margin-top: -15px;
+  margin-left: -3px;
+  font-size: 100%;
+  color: white;
+  text-shadow: 1px 3px 0px burlywood;
+}
+
+.second-ul {
+  padding-top: 30px;
+  padding-left: 470px;
+}
+.second-ul a {
+  text-decoration: none;
+  padding: 3px;
+}
+.second-ul a i {
+  font-size: 70%;
+}
+
+.nav-a {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  margin-top: -7px;
+}
+
+.nav-a:hover {
+  background-color: white;
+  color: #3cbd71;
+}
+
+.nav-home {
+  background-color: white;
+  color: #3cbd71;
+  padding: 10px;
+  margin-top: -7px;
+}
+
+/*-------------------------------nav sndBar--------------------*/
+.opt-search {
+  width: 100%;
+  display: block;
+  float: left;
+  text-align: right;
+  margin-top: 20px;
+  padding-right: 30px;
+}
+
+.right-line {
+  border-right: 1px solid #3cbd71;
+  float: right;
+  height: 50px;
+  margin-top: -7px;
+  padding-right: 30px;
+}
+
+.whish-Cart {
+  width: 100%;
+  float: left;
+  color: white;
+  padding: 20px;
+}
+
+.ndnav {
+  display: block;
+  width: 100%;
+  background-color: #2e8a57;
+  padding-top: 5px;
+  height: 90px;
+}
+
+.opt {
+  width: 200px;
+  padding: 5px 0px 5px 5px;
+  border-radius: 7px;
+}
+
+.search {
+  width: 300px;
+  padding: 5px 0px 4px 5px;
+  border-radius: 7px;
+}
+
+.submit {
+  padding: 4px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.wish-ico, .badge-ico {
+  padding: 0px 5px 0px 0px;
+  font-size: 170%;
+}
+
+.wish-ico:hover {
+  color: #3cbd71;
+}
+
+.badge-ico:hover {
+  color: #3cbd71;
+}
+
+.two-one {
+  float: right;
+  padding: 0px 50px 0px 0px;
+  position: relative;
+  /*ေတာ္ေတာ္အသံုးဝင္တယ္ top အနုတ္တန္ဖိုးနဲ႔တဲြသံုး*/
+  top: -10px;
+  color: white;
+}
+
+.badge, .wish-count {
+  position: relative;
+  top: -22px;
+  right: -10px;
+  background-color: #3cbd71;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 70%;
+}
+
+.wish-a, .badge-a {
+  text-decoration: none;
+  color: white;
+}
+
+.rightSide-line {
+  border-right: 1px solid #3cbd71;
+  height: 50px;
+  margin-top: -40px;
+  padding-left: 373px;
+}
+
+/*------------------------------------------------------Logo Img 2----------------------------------*/
+.galleryContainer {
+  max-width: 1142px;
+  width: 100%;
+  max-height: 700px;
+  /* max width နဲ႔ max height သံုးျခင္းျဖင့္ web sizeေသးရင္ containerေတြလည္း လုိက္ေသးမယ္။ */
+}
+
+.slideShowContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: gainsboro;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.imageHolder {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+.imageHolder img {
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------arrow-------------------------------------------*/
+.leftArrow, .rightArrow {
+  background: #00000036;
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  top: 60%;
+  /*can adjust updown*/
+  left: 0;
+  z-index: 3;
+  transition: background 0.5s;
+  transform: translateY(-60%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.rightArrow {
+  left: auto;
+  right: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.rightArrow:hover, .leftArrow:hover {
+  background: #000000a8;
+  cursor: pointer;
+  /*able to click*/
+}
+
+.arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 3px solid white;
+  border-left: none;
+  border-bottom: none;
+  margin: auto;
+  /* horizontally center*/
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+}
+
+.arrowLeft {
+  transform: rotateZ(-135deg);
+}
+
+.arrowRight {
+  transform: rotate(45deg);
+}
+
+.imageHolder img {
+  float: left;
+  width: 20%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+/*-------------------------------------------အာက္ကအတုိcommandေတြက ဒီCategories ေအာက္ကပဲ-----------------------------------------*/
+/*----------ပံုနဲ႔စာကို အုပ္ထားတဲ့ div ကိုသံုးျပီး အကြာေဝးညိွျခင္း--------*/
+.img-cate-class {
+  position: relative;
+  border: 1px solid red;
+  height: 320px;
+}
+
+.img-cate {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+}
+
+.img-cate:first-child {
+  padding-right: 13px;
+}
+
+.img-cate:last-child {
+  left: 60px;
+  padding-left: 13px;
+}
+
+.img-cate:nth-child(3) {
+  left: 40px;
+  padding: 0px 7.5px 0px 5px;
+}
+
+.img-cate:nth-child(2) {
+  left: 20px;
+  padding: 0px 7.5px 0px 5px;
+}
+
+.slide-box {
+  position: relative;
+  top: -250px;
+  left: 15%;
+  width: 70%;
+  height: 200px;
+  background-color: transparent;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  transition: border-left 3s, border-right 1s, border-bottom 0.7s, border-top 2s;
+  border-radius: 4px;
+}
+
+/*-------------ပံု ေနာက္ခံနက္ေရာင္နဲစာေတြညိွျခင္း----------------*/
+.image-co1 {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  background-color: black;
+  line-height: 0px;
+  margin: 0;
+  border: 5px solid silver;
+  border-radius: 5px;
+}
+
+.goods-img {
+  height: auto;
+  width: 100%;
+  opacity: 0.7;
+  transform: scale(1.15);
+  transition: 0.3s;
+  transform-origin: 0vh;
+}
+
+.cate-h3 {
+  margin-left: 5.8%;
+  color: black;
+  padding: 30px 0px 30px 0px;
+}
+
+.cate-head {
+  display: inline-block;
+  font-weight: 200;
+  border-bottom: 1px solid #3cbd71;
+  padding-bottom: 5px;
+}
+
+.goods-name {
+  position: relative;
+  top: 70px;
+  color: white;
+  font-size: 110%;
+  font-weight: 700;
+}
+
+/*-------------------အ ေပၚက မ်ဥ္းနဲ႕ပံုကို အတူအလုပ္လုပ္ဖုိ႔တစ္ေနရာမွာ hover ထည့္မယ္။-------*/
+.img-cate:hover .goods-img {
+  opacity: 1;
+  transform-origin: 20vh;
+}
+.img-cate:hover .slide-box {
+  border-top: 4px solid white;
+  border-bottom: 4px solid #ffa500;
+  border-right: 4px solid green;
+  border-left: 4px solid blueviolet;
+}
+
+/*------------------------------------------------------------------Top Deals Section-----------------------------------------*/
+.top-deals {
+  margin-top: 30px;
+}
+
+.top-list {
+  list-style-type: none;
+}
+
+.top-list li {
+  display: block;
+  float: left;
+  background-color: transparent;
+  padding: 13px 13px 13px 13px;
+}
+
+.top-list li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 80%;
+}
+
+.top-list li:active {
+  background-color: #ccc;
+  height: 48px;
+}
+
+.top-row {
+  position: relative;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 48px;
+  border-radius: 7px;
+  margin-bottom: 2px;
+  overflow: hidden;
+}
+
+/*--------------------------  Editing Pictures and Label----------*/
+.topList-mainDiv-1, .topList-mainDiv-2, .topList-mainDiv-3, .topList-mainDiv-4, .topList-mainDiv-5 {
+  position: relative;
+  max-width: 100%;
+  max-height: 397px;
+  /*ပံုမွာ transparent div ကိုတည္ေဆာက္တဲ့ခါမွာ ေအာက္မွာ လြတ္သြားတယ္။
+     အာ့ေၾကာင့္ ေအာက္က စာနဲ႔ logo ေတြကို တစ္ခါတည္း ေခၚလုိ႔ရေအာင္ move-div ကို
+     ေဆာက္တယ္။ move div ကိုလြတ္တဲ့ေနရာဆီ top အနုတ္ နဲ႔တက္ခုိင္းျပီး။
+     move-div နဲ႔ ပံုရဲ့ height ေပါင္းလဒ္က 356px ျဖစ္လုိ႔ သတ္မွတ္ျပီး က်န္တဲ့အလြတ္
+     ပိုင္းကိုျဖတ္ပစ္တယ္။*/
+  /*.New ကိုထည့္တည့္ခါေအာက္ေရာက္top နဲကန္လုိ႔ အ ေပၚနည္းနည္လြတ္သြားတယ္။ ဒါေၾကာင့္ အထက္ကို margin 20px ေပးထားတာျပန္ေလ်ာ့တယ္။*/
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  overflow: hidden;
+  /*ေဘာင္ကိုေကြးတဲ့ခါ ပံုထိပ္ကမေကြးပဲထြက္ေနလို႔ ေဖ်ာက္။ ပံုကိုေကြးလုိမရ ေကြးရင္ ေအာက္အစန္းပါ ေကြးရင္ၾကည့္မေကာင္း*/
+  box-shadow: 0px 2px 1px;
+  background-color: #eee;
+  margin: 20px 5px 0px 5px;
+}
+
+.topList-mainDiv-1 {
+  margin-left: 16px;
+}
+
+.topList-mainDiv a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-row2 {
+  border: 1px solid #ccc;
+  max-width: 100%;
+  height: 480px;
+  position: relative;
+  border-radius: 7px;
+}
+
+.topList-mainDiv-1 {
+  position: relative;
+  float: left;
+}
+
+.topList-mainDiv-2 {
+  position: relative;
+  float: left;
+}
+
+.topList-mainDiv-3 {
+  position: relative;
+  float: left;
+}
+
+.topList-mainDiv-4 {
+  position: relative;
+  float: left;
+  display: inline;
+}
+
+.topList-mainDiv-5 {
+  position: relative;
+  float: left;
+}
+
+.pork-meat {
+  /*ပံုေတြ class name ျဖစ္တယ္*/
+  width: 100%;
+  height: 225px;
+}
+
+.pork {
+  font-size: 70%;
+}
+
+.pork-bold {
+  font-size: 70%;
+  font-weight: bold;
+  color: black;
+}
+
+.pork-bold a:hover {
+  color: #3cbd71;
+}
+
+.three-oneTop {
+  position: relative;
+  padding-top: 20px;
+  left: -14px;
+}
+
+.wish-cart, .wish-heart {
+  text-decoration: none;
+  color: gray;
+  font-size: 70%;
+  background-color: #ddd;
+  padding: 7px;
+  border-radius: 3px;
+  box-shadow: 0.5px 0.5px 0.5px;
+  border: 1px solid #486808;
+}
+
+.wish-a, .badge-a {
+  text-shadow: 1px 4px 1px #505005;
+}
+
+.stars {
+  font-size: 70%;
+  color: gold;
+}
+
+.top-noti {
+  /*notificationေလး ေပၚဖုိ႔ ေဆာက္ျခင္း*/
+  font-size: 60%;
+  font-weight: bold;
+  background-color: #3cbd71;
+  padding: 3px 8px 3px 8px;
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  top: -18px;
+  right: -13px;
+  box-shadow: 0.5px 0.5px 0.5px;
+  border: 1px solid #cca200;
+}
+
+.img-trans {
+  position: relative;
+  width: 70%;
+  height: 150px;
+  background-color: transparent;
+  top: -190px;
+  left: 22px;
+  transform: rotateX(100deg);
+  transition: 1s;
+  text-align: center;
+  line-height: 0px;
+  /*putting eye at top of div. after rotate it looks come to middle from bottom */
+}
+
+/* line-hieight ကို သုညေပးမထားဘဲျဖဳတ္ထားပါ ေအာက္က ေနတက္လာတဲ့ပံု မ ေပၚေတာ့ဘူး*/
+.img-part {
+  position: relative;
+  height: 360px;
+  margin-top: -23px;
+}
+
+.img-part:hover {
+  /*img-part ကိုေထာက္တာနဲ႔ ေအာက္ အထဲကဟာေတြ အလုပ္လုပ္မယ္ */
+}
+.img-part:hover img {
+  opacity: 0.4;
+}
+.img-part:hover .img-trans {
+  background-color: rgba(233, 233, 233, 0.2);
+  transform: rotateX(180deg);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  line-height: 150px;
+}
+.img-part:hover .img-trans .eye {
+  color: #3cbd71;
+  transition: 1s;
+}
+
+.eye {
+  position: relative;
+  padding: 20%;
+  /*making big area for eye*/
+  color: transparent;
+  transform: rotateX(-180deg);
+  /*eye ကို ေျပာင္းျပန္ထားလုိက္တာ။webမွာေပၚတဲ့ခါ အတည့္ေပၚမယ္။*/
+  transition: 2s;
+}
+
+.img-part img {
+  transition: opacity 1s;
+}
+
+.move-div {
+  position: relative;
+  top: -105px;
+  left: 10px;
+}
+
+.new {
+  position: relative;
+  top: 28px;
+  color: white;
+  background-color: #2e8a57;
+  padding: 5px;
+  z-index: 9999;
+  /*img တုိ႔ကို opacity ေပးေပမယ့္ ဒီေကာင္မိွန္မသြားလုပ္ျခင္းျဖစ္တယ္။*/
+  box-shadow: 2px 2px 2px #022920;
+  border-radius: 7px;
+  text-shadow: 1px 1px 1px;
+}
+
+.arr-pre, .arr-next {
+  position: relative;
+  left: 50%;
+  text-decoration: none;
+  top: -380px;
+  color: #3cbd71;
+  font-size: 90%;
+  width: 30px;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: #ccc;
+  box-shadow: 2px 2px 1px;
+  border: 1px solid #bbb;
+  text-align: center;
+}
+
+.arrow-base {
+  position: relative;
+  height: 20px;
+  top: 400px;
+}
+
+/*-----------------------------------------------Section Testimonials--------------------*/
+.section-testimonials {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.h3-testi {
+  display: block;
+  width: 100%;
+  height: 35px;
+  border-bottom: 1px solid #ccc;
+}
+.h3-testi h3 {
+  display: inline;
+  color: black;
+  border-bottom: 1px solid #2e8a57;
+  padding-bottom: 8px;
+  font-weight: 200;
+}
+
+.testi-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.testi-msg {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #ccc;
+  font-size: 110%;
+  line-height: 45px;
+  border-radius: 7px;
+  overflow: hidden;
+  /*ဟုိးအထက္ကလိုပဲ ေဘာေလးကိုေကြးတာ span-msg အစြန္းထြက္ေနလုိ
+          သူကိုသြားျပီး border-radius မေပးခ်င္ုလိ႔ဒီက ေန hiddenလုပ္လိုိက္တာ္ */
+}
+.testi-msg .span-msg {
+  position: relative;
+  width: 10%;
+  height: 100%;
+  background-color: #2e8a57;
+  text-align: center;
+  float: left;
+  color: white;
+}
+.testi-msg .span-testi {
+  position: relative;
+  width: 35%;
+  height: 100%;
+  float: left;
+  background-color: #3cbd71;
+  color: white;
+}
+.testi-msg .span-testi p {
+  padding-left: 7px;
+}
+.testi-msg .arr {
+  position: relative;
+  right: -43.5%;
+}
+.testi-msg .arr .arr a {
+  text-decoration: none;
+}
+.testi-msg .arr i {
+  font-size: 90%;
+  text-align: center;
+  width: 30px;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: #ccc;
+  box-shadow: 1px 1px 1px;
+  border: 1px solid #bbb;
+}
+
+/*----------------------------customer & feedback---------*/
+.outer-div {
+  position: relative;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+.outer-div .outerIn-div {
+  position: relative;
+  width: 95%;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin: 23px auto 0px;
+}
+.outer-div .testi-div {
+  position: relative;
+  width: 95%;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin: 23px auto 0px;
+}
+
+.customer-div {
+  position: relative;
+  padding: 13px 0px 0px 50px;
+  position: relative;
+  width: 95%;
+  height: 130px;
+}
+.customer-div .beckham {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px 15px 50px 15px;
+  transition: 1s;
+  float: left;
+  margin-right: 20px;
+}
+.customer-div .name-beck {
+  position: relative;
+  color: black;
+  margin-top: 40px;
+}
+
+.beckham:hover {
+  transform: rotateY(180deg);
+}
+
+/*--------------------------------------------Purchase Progress-------------------------------*/
+.pur-progress {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.pur-progress1 {
+  position: relative;
+  height: 170px;
+  float: left;
+  border: 0.5px solid #eee;
+  text-align: center;
+  border-collapse: collapse;
+}
+.pur-progress1 i {
+  font-size: 200%;
+  color: black;
+  padding: 30px 0px 5px 0px;
+}
+.pur-progress1 h4 {
+  font-size: 110%;
+  color: #333;
+  padding: 15px 0px 5px 0px;
+}
+.pur-progress1 p {
+  font-size: 80%;
+  color: #222;
+  padding: 5px 0px 5px 0px;
+}
+
+.section-purchase {
+  margin-bottom: 30px;
+}
+
+/*-----------------------------------------------Custiomer Serivice-------------------------*/
+.customer-service {
+  display: block;
+  background-color: #eee;
+}
+
+.main-custom {
+  position: relative;
+  width: 100%;
+  margin-left: 30px;
+}
+
+.custom-serve {
+  height: 90px;
+  border: 1px solid transparent;
+  float: left;
+}
+.custom-serve i {
+  font-size: 200%;
+  color: #3cbd71;
+  margin: 20px 10px 0px 15px;
+}
+.custom-serve .support {
+  position: relative;
+  font-size: 120%;
+  top: -20px;
+  color: black;
+}
+.custom-serve .support :last-child {
+  font-size: 60%;
+  padding-left: 65px;
+}
+
+.custom-line {
+  display: block;
+  height: 60px;
+  width: 1px;
+  background: #ccc;
+  margin-top: -75px;
+  margin-left: -1.3px;
+}
+
+/*-------------------------------------------Subscribe-----------------------------------------*/
+.subscribe-div {
+  background-color: silver;
+  height: 60px;
+  border-top: 2px solid #3cbd71;
+  border-bottom: 2px solid #3cbd71;
+}
+
+.email {
+  position: relative;
+  height: 40px;
+  width: 40%;
+  float: left;
+  margin-top: 8px;
+}
+
+.sub-para {
+  top: 18px;
+  position: relative;
+  background-color: #3cbd71;
+  padding: 10px 15px 7px 15px;
+}
+.sub-para a {
+  color: white;
+  top: 15px;
+}
+
+.sub-fb {
+  position: relative;
+  text-align: right;
+  height: 0px;
+  /*email inputကိုပိတ္ထားလုိေဖ်ာက္ထားတာ။သူ႔ကိုေတြ႔ခ်င္ pxတုိးျပီး inspectကၾကည့္
+  သူနဲ႔ ဆုိင္တဲ့ fb logoေတာ့ျပသနာမရွိဘူး။*/
+}
+
+.fb-sub {
+  position: relative;
+  display: inline;
+  color: blue;
+  background-color: #ddd;
+  padding: 8px;
+  top: -12px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px blueviolet;
+}
+
+.fb-sub:hover {
+  background-color: #3a76f7;
+  color: #ccc;
+}
+
+/*---------------------------------------Direction-------------------------------*/
+.section-direction {
+  height: 400px;
+  background-color: darkslategray;
+  border-bottom: 2px solid #3cbd71;
+}
+
+.direction {
+  position: relative;
+  left: -5px;
+  color: #ccc;
+  padding-top: 60px;
+}
+.direction h4 {
+  font-weight: 200;
+  border-bottom: 2px solid #2e8a57;
+  display: inline-block;
+}
+
+.direction-1 {
+  position: relative;
+  width: 25%;
+  float: left;
+}
+.direction-1 p {
+  padding-top: 20px;
+  font-size: 80%;
+  text-align: justify;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+.direction-1 h4 {
+  border-bottom: transparent;
+}
+.direction-1 .h4-line {
+  display: block;
+  width: 83px;
+  height: 2px;
+  background-color: #2e8a57;
+}
+
+.direction-2 {
+  position: relative;
+  width: 20%;
+  float: left;
+  padding: 0px 0px 0px 15px;
+}
+.direction-2 a {
+  text-decoration: none;
+}
+.direction-2 .address {
+  margin: 20px 0px 0px 5px;
+  background-color: green;
+  box-shadow: 2px 2px 1px #07071a;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  font-size: 70%;
+  text-shadow: 5px 0px 0px black;
+}
+.direction-2 #road {
+  font-size: 80%;
+  padding: 10px 0px 5px 7px;
+  text-align: justify;
+}
+.direction-2 .contact-us {
+  margin: 4px 0px 5px 4px;
+  background-color: maroon;
+  padding: 9px 14px 9px 14px;
+  border-radius: 5px;
+  color: #ccc;
+  font-size: 70%;
+  text-shadow: 2px 4px 0px black;
+  box-shadow: 2px 2px 1px #07071a;
+}
+.direction-2 #text-msg {
+  margin-bottom: 5px;
+}
+.direction-2 #text-msg a {
+  position: relative;
+  color: #ccc;
+  font-size: 80%;
+  text-align: justify;
+  padding: 10px 0px 0px 7px;
+}
+.direction-2 #text-msg a:hover {
+  color: #2e8a57;
+}
+.direction-2 .callus {
+  background-color: skyblue;
+  color: #ccc;
+  padding: 9px 14px 9px 14px;
+  font-size: 70%;
+  text-shadow: 2px 4px 0px black;
+  box-shadow: 2px 2px 1px #07071a;
+  border-radius: 5px;
+  margin: 4px 8px 5px 4px;
+  float: left;
+}
+.direction-2 .phone {
+  font-size: 80%;
+  margin-top: 16px;
+  color: #ccc;
+}
+
+.phone:hover {
+  color: #2e8a57;
+}
+
+.direction-3 {
+  position: relative;
+  width: 15%;
+  float: left;
+  padding: 0px 0px 0px 20px;
+}
+.direction-3 ul {
+  padding-top: 10px;
+}
+.direction-3 ul li {
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
+}
+.direction-3 ul li a {
+  color: #ccc;
+  font-size: 60%;
+}
+.direction-3 ul li a:hover {
+  color: #2e8a57;
+}
+
+.direction-4 {
+  position: relative;
+  float: left;
+  width: 15%;
+}
+.direction-4 ul {
+  padding-top: 15px;
+}
+.direction-4 ul li {
+  list-style-type: none;
+}
+.direction-4 ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 80%;
+}
+.direction-4 ul li a p {
+  border-bottom: 1px solid #ccc;
+  display: inline;
+  padding-bottom: 1px;
+}
+.direction-4 ul li a p:hover {
+  color: #2e8a57;
+  border-bottom: transparent;
+}
+.direction-4 ul li i {
+  background-color: #ccc;
+  color: #3b3838;
+  padding: 2.5px 5.5px 2.5px 5.5px;
+  font-size: 50%;
+  border-radius: 50%;
+}
+.direction-4 ul li i:hover {
+  background-color: #2e8a57;
+}
+
+.direction-5 {
+  width: 25%;
+  float: left;
+}
+.direction-5 .map-top {
+  margin-top: 20px;
+}
+
+/*----------------------------------------------------Footer-----------------------------------*/
+.footer {
+  background-color: #333;
+  text-align: center;
+}
+.footer .footer-div {
+  text-align: center;
+}
+.footer ul {
+  position: relative;
+  left: 23%;
+}
+.footer ul li {
+  float: left;
+  width: 90px;
+  height: 50px;
+  color: #ccc;
+  margin: 10px 5px 10px 5px;
+}
+.footer ul li img {
+  padding: 6px 2px 0px 3px;
+}
+.footer ul li img:hover {
+  box-shadow: 5px 5px 3px #bbb;
+}
+.footer p {
+  color: #ccc;
+}
+
+.div-mar {
+  margin-top: 15px;
+  height: 70px;
+  background-color: #223f22;
+  line-height: 60px;
+  border-bottom: 2px solid #3cbd71;
+  border-top: 2px solid #3cbd71;
+}
+
+.arrow-up {
+  text-align: center;
+  line-height: 50px;
+  font-weight: 500;
+  position: absolute;
+  right: 0px;
+  bottom: 70px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  position: fixed;
+}
+.arrow-up i {
+  color: #444;
+}
+
+/*-----------------------------------------------Mobile Navigation-----------------------------------------*/
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 2px 2px #000;
+  z-index: 9999;
+  height: 52px;
+}
+
+.linksFor3Bars {
+  position: absolute;
+  top: 6.5%;
+  right: 6%;
+  display: none;
+}
+.linksFor3Bars ul {
+  width: 170px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  box-shadow: 3px 1px 1px 1px #333;
+  background-color: #cccccc;
+}
+.linksFor3Bars ul li {
+  padding: 5px;
+}
+.linksFor3Bars ul li .nav-drop {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 70%;
+}
+.linksFor3Bars ul li a:hover {
+  background-color: goldenrod;
+}
+
+.mobile-nav-icon {
+  position: absolute;
+  right: 2%;
+  top: 6.5%;
+  cursor: pointer;
+  display: none;
+}
+.mobile-nav-icon i {
+  color: white;
+  font-size: 120%;
+}
+
+.goTopArrow {
+  display: none;
+}
+
+.arrow-up {
+  position: absolute;
+  text-decoration: none;
+  bottom: 20px;
+  right: 0;
+  position: fixed;
+  text-align: center;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+  line-height: 50px;
+  color: black;
+  border: 1px solid #bbb;
+  z-index: 9999;
+}
